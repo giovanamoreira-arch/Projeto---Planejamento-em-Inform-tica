@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="City Máquinas — peças e componentes para eletrodomésticos. Conheça nossos produtos e entre em contato.">
+  <title>City Máquinas | Peças para Eletrodomésticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="City Máquinas - início">
+        <span class="brand-mark">CM</span>
+        <span class="brand-name">CITY <strong>MÁQUINAS</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="navMenu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#atendimento">Atendimento</a>
+        <a class="nav-cta" href="#contato">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span></span> PEÇAS PARA ELETRODOMÉSTICOS</p>
+        <h1>Soluções e peças para manter tudo <span>em funcionamento.</span></h1>
+        <p class="hero-text">Conheça a City Máquinas e encontre peças e componentes para eletrodomésticos. Entre em contato para consultar disponibilidade e solicitar atendimento.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#produtos">Conheça nossos produtos</a>
+          <a class="button button-outline" href="#contato">Entre em contato</a>
+        </div>
+        <div class="hero-note">CITY MÁQUINAS <span>•</span> QUALIDADE E ATENDIMENTO</div>
+      </div>
+      <div class="hero-decoration decoration-one"></div>
+      <div class="hero-decoration decoration-two"></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-items">
+        <div><span class="trust-icon">✦</span><span>Atendimento</span></div>
+        <div><span class="trust-icon">✓</span><span>Qualidade</span></div>
+        <div><span class="trust-icon">⚙</span><span>Peças e componentes</span></div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow dark">CONHEÇA A CITY MÁQUINAS</p>
+          <h2>Sobre <span>nós</span></h2>
+          <p class="section-text">A City Máquinas atua no segmento de peças para eletrodomésticos, buscando atender às necessidades de seus clientes com atenção e compromisso.</p>
+          <p class="section-text">Nosso objetivo é facilitar a busca por peças e componentes, oferecendo atendimento para ajudar você a encontrar o que procura.</p>
+          <a class="text-link" href="#contato">Fale com nossa equipe <span>→</span></a>
+        </div>
+        <div class="about-card">
+          <div class="gear">⚙</div>
+          <p class="about-card-title">CITY MÁQUINAS</p>
+          <p class="about-card-subtitle">Peças • Componentes • Atendimento</p>
+          <div class="blue-line"></div>
+          <p class="about-card-small">Sua necessidade merece atenção.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products" id="produtos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">O QUE VOCÊ ENCONTRA</p>
+          <h2>Nossos <span>produtos</span></h2>
+          <p class="section-text">Passe o mouse ou clique em um produto para conhecer mais informações.</p>
+        </div>
+        <div class="product-grid">
+          <button class="product-card product-trigger" type="button"
+            data-product="Placas eletrônicas"
+            data-description="As placas eletrônicas participam do controle de diferentes funções do eletrodoméstico. A peça correta depende da marca, do modelo e da versão do equipamento."
+            data-category="Componentes eletrônicos"
+            data-application="Consulte a compatibilidade com a marca e o modelo do seu aparelho."
+            data-note="Envie uma foto da etiqueta do equipamento e, se possível, da peça para ajudar na identificação.">
+            <span class="product-visual visual-board"><span>▦</span><span class="visual-hint">Clique para saber mais</span></span>
+            <span class="product-info"><strong>Placas eletrônicas</strong><span>Componentes para eletrodomésticos.</span><span class="card-more">Ver informações <b>→</b></span></span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Kits de mecanismo"
+            data-description="Os kits de mecanismo reúnem componentes utilizados em determinados conjuntos de eletrodomésticos. A composição e a aplicação variam conforme o equipamento."
+            data-category="Kits e mecanismos"
+            data-application="A compatibilidade deve ser confirmada pelo modelo do aparelho e pelo código da peça."
+            data-note="Entre em contato informando a marca, o modelo e, se tiver, o código do componente.">
+            <span class="product-visual visual-kit"><span>⚙</span><span class="visual-hint">Clique para saber mais</span></span>
+            <span class="product-info"><strong>Kits de mecanismo</strong><span>Peças e conjuntos para reposição.</span><span class="card-more">Ver informações <b>→</b></span></span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Eletrobombas"
+            data-description="Eletrobombas são componentes usados para movimentar ou drenar água em determinados equipamentos. Existem modelos diferentes para aplicações específicas."
+            data-category="Componentes eletromecânicos"
+            data-application="Consulte a aplicação e a compatibilidade antes de escolher a peça."
+            data-note="Envie a marca e o modelo do eletrodoméstico ou uma foto da peça para consultar a opção adequada.">
+            <span class="product-visual visual-pump"><span>◉</span><span class="visual-hint">Clique para saber mais</span></span>
+            <span class="product-info"><strong>Eletrobombas</strong><span>Componentes para diferentes equipamentos.</span><span class="card-more">Ver informações <b>→</b></span></span>
+          </button>
+        </div>
+        <p class="disclaimer">Os produtos apresentados são exemplos. A disponibilidade pode variar; entre em contato para confirmar modelos e estoque.</p>
+      </div>
+    </section>
+
+    <section class="section service" id="atendimento">
+      <div class="container service-grid">
+        <div>
+          <p class="eyebrow">ATENDIMENTO CITY MÁQUINAS</p>
+          <h2>Como podemos <span>ajudar?</span></h2>
+          <p class="service-text">Entre em contato para tirar dúvidas sobre peças, consultar disponibilidade ou solicitar um orçamento.</p>
+        </div>
+        <div class="service-list">
+          <div class="service-item"><span>01</span><div><h3>Consulta de peças</h3><p>Informe o tipo de peça e, se possível, a marca e o modelo do eletrodoméstico.</p></div></div>
+          <div class="service-item"><span>02</span><div><h3>Informações sobre produtos</h3><p>Consulte nossa equipe sobre características e disponibilidade dos itens.</p></div></div>
+          <div class="service-item"><span>03</span><div><h3>Orçamentos e contato</h3><p>Envie sua solicitação pelos nossos canais de atendimento.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contato">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">FALE COM A GENTE</p>
+          <h2>Vamos encontrar o que você <span>precisa?</span></h2>
+          <p>Entre em contato com a City Máquinas ou acompanhe nossas novidades pelo Instagram.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" id="whatsappLink" href="#" target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a>
+          <a class="button button-outline-light" href="https://www.instagram.com/citymaquinas/" target="_blank" rel="noopener">Acessar Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Fechar" data-close-modal>×</button>
+      <p class="eyebrow dark">CONHEÇA O PRODUTO</p>
+      <h2 id="modalTitle">Produto</h2>
+      <p class="modal-description" id="modalDescription"></p>
+      <div class="modal-detail"><strong>Categoria</strong><span id="modalCategory"></span></div>
+      <div class="modal-detail"><strong>Aplicação</strong><span id="modalApplication"></span></div>
+      <div class="modal-note" id="modalNote"></div>
+      <a class="button button-primary modal-whatsapp" id="productWhatsapp" href="#" target="_blank" rel="noopener">Consultar este produto pelo WhatsApp ↗</a>
+      <p class="modal-footnote">Modelos e disponibilidade devem ser confirmados com a equipe.</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">CM</span><span class="brand-name">CITY <strong>MÁQUINAS</strong></span></a>
+      <p>© <span id="year"></span> City Máquinas. Todos os direitos reservados.</p>
+      <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
