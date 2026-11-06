@@ -1,23 +1,13 @@
-// PERSONALIZAÇÃO: substitua pelo WhatsApp oficial da City Máquinas.
-// Formato: código do país + DDD + número, somente números.
-// Exemplo fictício: 5511999999999
-const whatsappNumber = "5511999999999";
 
-const makeWhatsAppUrl = (message) => {
-  if (!whatsappNumber || whatsappNumber === "5511999999999") return "https://wa.me/";
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-};
+// Instagram oficial da City Máquinas
+const instagramLink = "https://www.instagram.com/citymaquinas/";
 
-const whatsappLink = document.getElementById("whatsappLink");
-const generalMessage = "Olá! Gostaria de informações sobre os produtos da City Máquinas.";
-whatsappLink.href = makeWhatsAppUrl(generalMessage);
-whatsappLink.addEventListener("click", (event) => {
-  if (whatsappNumber === "5511999999999") {
-    event.preventDefault();
-    alert("Configure o número oficial do WhatsApp no arquivo js/script.js antes de publicar o site.");
-  }
-});
+// Botão principal de contato
+const instagramButton = document.getElementById("instagramLink");
 
+instagramButton.href = instagramLink;
+
+// Atualiza o ano automaticamente
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Menu responsivo
@@ -38,37 +28,35 @@ navMenu.querySelectorAll("a").forEach((link) => {
   });
 });
 
-// Modal: abre ao clicar/tocar em um card de produto.
+// Modal: abre ao clicar/tocar em um card de produto
 const modal = document.getElementById("productModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalCategory = document.getElementById("modalCategory");
 const modalApplication = document.getElementById("modalApplication");
 const modalNote = document.getElementById("modalNote");
-const productWhatsapp = document.getElementById("productWhatsapp");
+const productInstagram = document.getElementById("productInstagram");
+
 let lastFocusedElement = null;
 
 function openProductModal(card) {
   lastFocusedElement = card;
+
   const product = card.dataset.product;
+
   modalTitle.textContent = product;
   modalDescription.textContent = card.dataset.description;
   modalCategory.textContent = card.dataset.category;
   modalApplication.textContent = card.dataset.application;
   modalNote.textContent = card.dataset.note;
 
-  const message = `Olá! Gostaria de consultar informações e disponibilidade sobre: ${product}.`;
-  productWhatsapp.href = makeWhatsAppUrl(message);
-  productWhatsapp.onclick = (event) => {
-    if (whatsappNumber === "5511999999999") {
-      event.preventDefault();
-      alert("Configure o número oficial do WhatsApp no arquivo js/script.js antes de publicar o site.");
-    }
-  };
+  // Direciona para o Instagram da City Máquinas
+  productInstagram.href = instagramLink;
 
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+
   modal.querySelector(".modal-close").focus();
 }
 
@@ -76,19 +64,40 @@ function closeProductModal() {
   modal.classList.remove("is-open");
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-open");
-  if (lastFocusedElement) lastFocusedElement.focus();
+
+  if (lastFocusedElement) {
+    lastFocusedElement.focus();
+  }
 }
 
+// Eventos dos cards de produtos
 document.querySelectorAll(".product-trigger").forEach((card) => {
   card.addEventListener("click", () => openProductModal(card));
 });
 
+// Fechar modal ao clicar no botão ou fora da janela
 modal.querySelectorAll("[data-close-modal]").forEach((element) => {
   element.addEventListener("click", closeProductModal);
 });
 
+// Fechar modal ao pressionar ESC
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && modal.classList.contains("is-open")) {
     closeProductModal();
   }
+});
+// Início e voltar ao topo
+document.querySelectorAll('a[href="#inicio"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+    navMenu.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menu");
+  });
 });
