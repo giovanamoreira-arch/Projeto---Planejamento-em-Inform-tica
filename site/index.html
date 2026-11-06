@@ -14,8 +14,7 @@
   <header class="header" id="inicio">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="City Máquinas - início">
-        <span class="brand-mark">CM</span>
-        <span class="brand-name">CITY <strong>MÁQUINAS</strong></span>
+        <img src="assets/images/logo.png" alt="City Máquinas" class="brand-logo">
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
       <nav class="nav" id="navMenu">
@@ -79,36 +78,200 @@
           <h2>Nossos <span>produtos</span></h2>
           <p class="section-text">Passe o mouse ou clique em um produto para conhecer mais informações.</p>
         </div>
-        <div class="product-grid">
+        <div class="product-brand-group">
+          <div class="product-brand-heading">
+            <h3>Electrolux <span>• Lavadoras</span></h3>
+            <p>6 produtos</p>
+          </div>
+          <div class="product-grid">
+          <button class="product-card product-trigger" type="button"
+            data-product="Atuador de acoplamento"
+            data-description="Componente do sistema de acionamento que participa do acoplamento entre os mecanismos da lavadora, conforme o projeto de cada modelo."
+            data-category="Sistema de acionamento"
+            data-application="A função e a aplicação variam conforme o modelo e a versão da lavadora."
+            data-note="Confirme o código da peça e o modelo completo do equipamento antes da compra.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-01.jpg.jpg" alt="Atuador de acoplamento — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-01.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Atuador de acoplamento</strong>
+              <span>Componente do sistema de acionamento que participa do acoplamento entre os mecanismos da lavadora, conforme o projeto de cada modelo.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Atuador de freio"
+            data-description="Componente do conjunto de freio/acionamento, responsável por atuar no mecanismo de liberação ou acionamento do sistema, conforme o projeto da lavadora."
+            data-category="Sistema de freio e acionamento"
+            data-application="A aplicação depende do modelo e do conjunto mecânico utilizado."
+            data-note="Confira o código da peça e a identificação da lavadora.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-02.jpg" alt="Atuador de freio — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-02.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Atuador de freio</strong>
+              <span>Componente do conjunto de freio/acionamento, responsável por atuar no mecanismo de liberação ou acionamento do sistema, conforme o projeto da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Válvula de entrada d’água"
+            data-description="Componente elétrico que controla a entrada de água na lavadora, abrindo ou interrompendo o fluxo conforme o comando do equipamento."
+            data-category="Entrada de água"
+            data-application="Verifique tensão, conexões, quantidade de vias e compatibilidade com o modelo."
+            data-note="Não escolha apenas pela aparência: compare o código e as especificações da peça.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-03.jpg" alt="Válvula de entrada d’água — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-03.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Válvula de entrada d’água</strong>
+              <span>Componente elétrico que controla a entrada de água na lavadora, abrindo ou interrompendo o fluxo conforme o comando do equipamento.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Eletrobomba"
+            data-description="Componente elétrico utilizado para escoar a água da lavadora durante as etapas de drenagem."
+            data-category="Drenagem"
+            data-application="A conexão, a fixação e as características elétricas podem variar entre modelos."
+            data-note="Confirme o código da eletrobomba e o modelo do equipamento.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-04.jpg" alt="Eletrobomba — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-04.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Eletrobomba</strong>
+              <span>Componente elétrico utilizado para escoar a água da lavadora durante as etapas de drenagem.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
           <button class="product-card product-trigger" type="button"
             data-product="Placas eletrônicas"
-            data-description="As placas eletrônicas participam do controle de diferentes funções do eletrodoméstico. A peça correta depende da marca, do modelo e da versão do equipamento."
-            data-category="Componentes eletrônicos"
-            data-application="Consulte a compatibilidade com a marca e o modelo do seu aparelho."
-            data-note="Envie uma foto da etiqueta do equipamento e, se possível, da peça para ajudar na identificação.">
-            <span class="product-visual visual-board"><span>▦</span><span class="visual-hint">Clique para saber mais</span></span>
-            <span class="product-info"><strong>Placas eletrônicas</strong><span>Componentes para eletrodomésticos.</span><span class="card-more">Ver informações <b>→</b></span></span>
+            data-description="Módulos responsáveis por comandar e gerenciar funções e etapas de funcionamento da lavadora."
+            data-category="Controle eletrônico"
+            data-application="Existem versões diferentes; código, configuração e compatibilidade precisam ser conferidos."
+            data-note="A placa deve ser identificada pelo código da peça e pelo modelo/PNC da lavadora.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-05.jpg" alt="Placas eletrônicas — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-05.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Placas eletrônicas</strong>
+              <span>Módulos responsáveis por comandar e gerenciar funções e etapas de funcionamento da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
           </button>
           <button class="product-card product-trigger" type="button"
-            data-product="Kits de mecanismo"
-            data-description="Os kits de mecanismo reúnem componentes utilizados em determinados conjuntos de eletrodomésticos. A composição e a aplicação variam conforme o equipamento."
-            data-category="Kits e mecanismos"
-            data-application="A compatibilidade deve ser confirmada pelo modelo do aparelho e pelo código da peça."
-            data-note="Entre em contato informando a marca, o modelo e, se tiver, o código do componente.">
-            <span class="product-visual visual-kit"><span>⚙</span><span class="visual-hint">Clique para saber mais</span></span>
-            <span class="product-info"><strong>Kits de mecanismo</strong><span>Peças e conjuntos para reposição.</span><span class="card-more">Ver informações <b>→</b></span></span>
+            data-product="Kit mecanismo"
+            data-description="Conjunto de componentes mecânicos utilizado no sistema de transmissão/acionamento da lavadora."
+            data-category="Mecanismo e transmissão"
+            data-application="A composição do kit e sua aplicação variam conforme o modelo."
+            data-note="Confira o código do conjunto e a compatibilidade antes de instalar.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/electrolux-06.jpeg" alt="Kit mecanismo — Electrolux" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>electrolux-06.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Kit mecanismo</strong>
+              <span>Conjunto de componentes mecânicos utilizado no sistema de transmissão/acionamento da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
           </button>
-          <button class="product-card product-trigger" type="button"
-            data-product="Eletrobombas"
-            data-description="Eletrobombas são componentes usados para movimentar ou drenar água em determinados equipamentos. Existem modelos diferentes para aplicações específicas."
-            data-category="Componentes eletromecânicos"
-            data-application="Consulte a aplicação e a compatibilidade antes de escolher a peça."
-            data-note="Envie a marca e o modelo do eletrodoméstico ou uma foto da peça para consultar a opção adequada.">
-            <span class="product-visual visual-pump"><span>◉</span><span class="visual-hint">Clique para saber mais</span></span>
-            <span class="product-info"><strong>Eletrobombas</strong><span>Componentes para diferentes equipamentos.</span><span class="card-more">Ver informações <b>→</b></span></span>
-          </button>
+          </div>
         </div>
-        <p class="disclaimer">Os produtos apresentados são exemplos. A disponibilidade pode variar; entre em contato para confirmar modelos e estoque.</p>
+
+        <div class="product-brand-group">
+          <div class="product-brand-heading">
+            <h3>Brastemp / Consul <span>• Lavadoras</span></h3>
+            <p>5 produtos</p>
+          </div>
+          <div class="product-grid">
+          <button class="product-card product-trigger" type="button"
+            data-product="Atuador de freio"
+            data-description="Componente do conjunto de freio e acionamento da lavadora, que atua no mecanismo conforme o projeto do equipamento."
+            data-category="Sistema de freio e acionamento"
+            data-application="A aplicação depende do modelo e do conjunto mecânico utilizado."
+            data-note="Confira o código da peça e a identificação completa da lavadora.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/brastemp-consul-01.jpg" alt="Atuador de freio — Brastemp / Consul" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>brastemp-consul-01.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Atuador de freio</strong>
+              <span>Componente do conjunto de freio e acionamento da lavadora, que atua no mecanismo conforme o projeto do equipamento.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Válvula de entrada d’água"
+            data-description="Componente que controla a admissão de água na lavadora, liberando ou interrompendo o fluxo conforme o comando do equipamento."
+            data-category="Entrada de água"
+            data-application="Tensão, conexões e configuração variam conforme o modelo."
+            data-note="Compare o código da válvula com o modelo da lavadora antes da compra.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/brastemp-consul-02.jpg" alt="Válvula de entrada d’água — Brastemp / Consul" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>brastemp-consul-02.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Válvula de entrada d’água</strong>
+              <span>Componente que controla a admissão de água na lavadora, liberando ou interrompendo o fluxo conforme o comando do equipamento.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Placas eletrônicas"
+            data-description="Módulos que controlam funções e etapas de operação da lavadora."
+            data-category="Controle eletrônico"
+            data-application="Há diferentes versões de placa; a compatibilidade deve ser validada pelo código e modelo."
+            data-note="Confira a etiqueta do equipamento e o código da placa.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/brastemp-consul-03.jpg" alt="Placas eletrônicas — Brastemp / Consul" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>brastemp-consul-03.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Placas eletrônicas</strong>
+              <span>Módulos que controlam funções e etapas de operação da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Kit mecanismo"
+            data-description="Conjunto de peças do sistema mecânico de transmissão e acionamento da lavadora."
+            data-category="Mecanismo e transmissão"
+            data-application="A composição e a aplicação podem variar entre famílias e modelos."
+            data-note="Confirme o código do kit e a compatibilidade com a lavadora.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/brastemp-consul-04.jpg" alt="Kit mecanismo — Brastemp / Consul" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>brastemp-consul-04.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Kit mecanismo</strong>
+              <span>Conjunto de peças do sistema mecânico de transmissão e acionamento da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          <button class="product-card product-trigger" type="button"
+            data-product="Eletrobomba"
+            data-description="Componente utilizado para realizar a drenagem da água da lavadora."
+            data-category="Drenagem"
+            data-application="Fixação, conectores e características elétricas variam conforme o modelo."
+            data-note="Verifique o código da peça e o modelo completo do equipamento.">
+            <span class="product-visual product-photo-slot">
+              <img src="assets/images/produtos/brastemp-consul-05.png" alt="Eletrobomba — Brastemp / Consul" class="product-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <span class="photo-placeholder"><strong>＋</strong>Adicionar foto<br><small>brastemp-consul-05.jpg</small></span>
+            </span>
+            <span class="product-info">
+              <strong>Eletrobomba</strong>
+              <span>Componente utilizado para realizar a drenagem da água da lavadora.</span>
+              <span class="card-more">Ver informações <b>→</b></span>
+            </span>
+          </button>
+          </div>
+        </div>
+        <p class="disclaimer">As peças e aplicações variam conforme o modelo da lavadora. Consulte a equipe para confirmar código, compatibilidade e disponibilidade.</p>
       </div>
     </section>
 
@@ -135,7 +298,7 @@
           <p>Entre em contato com a City Máquinas ou acompanhe nossas novidades pelo Instagram.</p>
         </div>
         <div class="contact-actions">
-          <a class="button button-light" id="whatsappLink" href="#" target="_blank" rel="noopener">Conversar pelo WhatsApp ↗</a>
+          <a class="button button-light" id="instagramLink" href="https://www.instagram.com/citymaquinas/" target="_blank" rel="noopener">Conversar pelo Instagram ↗</a>
           <a class="button button-outline-light" href="https://www.instagram.com/citymaquinas/" target="_blank" rel="noopener">Acessar Instagram ↗</a>
         </div>
       </div>
@@ -153,14 +316,14 @@
       <div class="modal-detail"><strong>Categoria</strong><span id="modalCategory"></span></div>
       <div class="modal-detail"><strong>Aplicação</strong><span id="modalApplication"></span></div>
       <div class="modal-note" id="modalNote"></div>
-      <a class="button button-primary modal-whatsapp" id="productWhatsapp" href="#" target="_blank" rel="noopener">Consultar este produto pelo WhatsApp ↗</a>
+      <a class="button button-primary modal-instagram" id="productInstagram" href="https://www.instagram.com/citymaquinas/" target="_blank" rel="noopener">Consultar este produto pelo Instagram ↗</a>
       <p class="modal-footnote">Modelos e disponibilidade devem ser confirmados com a equipe.</p>
     </section>
   </div>
 
   <footer class="footer">
     <div class="container footer-content">
-      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">CM</span><span class="brand-name">CITY <strong>MÁQUINAS</strong></span></a>
+      <a class="brand footer-brand" href="#inicio"><img src="assets/images/logo.png" alt="City Máquinas" class="brand-logo"></a>
       <p>© <span id="year"></span> City Máquinas. Todos os direitos reservados.</p>
       <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
     </div>
