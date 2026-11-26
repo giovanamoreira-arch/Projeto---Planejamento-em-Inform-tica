@@ -4,17 +4,17 @@ Site institucional desenvolvido como parte do Projeto Prático em Sistemas, com 
 
 ## Integrantes do grupo
 
-- **Nome:** Juliana Rodrigues Paraguassu  — **RA:2526101680** [RA]
+- **Nome:** Juliana Rodrigues Paraguassu  — **RA:2526101680**
 - **Nome:** Guilherme Marques da Silva 
- — **RA:2526101681** [RA]
+ — **RA:2526101681** 
 - **Nome:** Giovana Moreira de Araújo 
- — **RA:426202050** [RA]
+ — **RA:426202050** 
 - **Nome:** Wanderlick Dutra Bissoli 
- — **RA:2526100199** [RA]
+ — **RA:2526100199** 
 - **Nome:** Minerva Choque Huallpa 
- — **RA:426203026** [RA]
+ — **RA:426203026** 
 - **Nome:** Mayara Machado de Sousa Lima 
- — **RA:426202816** [RA]
+ — **RA:426202816** 
 
 ## Sobre o projeto
 
