@@ -15,8 +15,7 @@ Site institucional desenvolvido como parte do Projeto Prático em Sistemas, com 
  — **RA:426203026** 
 - **Nome:** Mayara Machado de Sousa Lima 
  — **RA:426202816**
-- **Nome:** Guilherme Schneider  
- — **RA:2526200686** 
+- **Nome:** Guilherme Schneider — **RA:2526200686** 
 
 ## Sobre o projeto
 
